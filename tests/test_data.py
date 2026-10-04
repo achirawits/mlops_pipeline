@@ -20,4 +20,4 @@ def test_three_classes():
  
 def test_alcohol_range():
     """ค่าที่หลุดช่วงนี้แปลว่าข้อมูลต้นทางผิดปกติ"""
-    assert df["mean radius"].between(ุ6.0, 28.0).all()
+    assert df["mean radius"].between(ุ 6.0, 28.0).all()
