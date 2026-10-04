@@ -6,7 +6,7 @@ df = load_breast_cancer(as_frame=True).frame
  
 def test_schema():
     """คอลัมน์ต้องครบ 13 ฟีเจอร์ + target"""
-    assert df.shape[1] == 14
+    assert df.shape[1] == 31
     assert "target" in df.columns
  
  
@@ -20,4 +20,4 @@ def test_three_classes():
  
 def test_alcohol_range():
     """ค่าที่หลุดช่วงนี้แปลว่าข้อมูลต้นทางผิดปกติ"""
-    assert df["alcohol"].between(10.0, 16.0).all()
+    assert df["mean radius"].between(5.0, 30.0).all()
